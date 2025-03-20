@@ -1,0 +1,26 @@
+[window]
+padding = { x = 15, y = 15 }
+
+[colors.primary]
+foreground = "#d3c6aa" # {< replace_color(data.colors.base05) >}
+background = "#2f383e" # {< replace_color(data.colors.base00) >}
+
+[colors.normal]
+black = "#2f383e"   # {< replace_color(data.colors.base00) >}
+red = "#7fbbb3"     # {< replace_color(data.colors.base08) >}
+green = "#83c092"   # {< replace_color(data.colors.base0B) >}
+yellow = "#dbbc7f"  # {< replace_color(data.colors.base0A) >}
+blue = "#a7c080"    # {< replace_color(data.colors.base0D) >}
+magenta = "#e67e80" # {< replace_color(data.colors.base0E) >}
+cyan = "#e69875"    # {< replace_color(data.colors.base0C) >}
+white = "#d3c6aa"   # {< replace_color(data.colors.base05) >}
+
+[colors.bright]
+black = "#859289"   # {< replace_color(data.colors.base03) >}
+red = "#7fbbb3"     # {< replace_color(data.colors.base08) >}
+green = "#83c092"   # {< replace_color(data.colors.base0B) >}
+yellow = "#dbbc7f"  # {< replace_color(data.colors.base0A) >}
+blue = "#a7c080"    # {< replace_color(data.colors.base0D) >}
+magenta = "#e67e80" # {< replace_color(data.colors.base0E) >}
+cyan = "#e69875"    # {< replace_color(data.colors.base0C) >}
+white = "#fdf6e3"   # {< replace_color(data.colors.base07) >}

@@ -1,0 +1,77 @@
+* {
+    all: unset;
+}
+
+.bar {
+    color: #d3c6aa; // {< replace_color(data.colors.base05) >}
+    background-color: #2f383e; // {< replace_color(data.colors.base00) >}
+}
+
+.left {
+    margin-left: 4px;
+}
+
+.workspaces {
+    padding: 4px;
+}
+
+.inactive,
+.active {
+    padding: 2px;
+}
+
+.active {
+    color: #e67e80; // {< replace_color(data.colors.base0E) >}
+}
+
+.right {
+    margin-right: 4px;
+    padding: 4px;
+}
+
+.systray {
+    padding: 2px;
+    padding-right: 4px;
+    padding-left: 4px;
+    border-radius: 10px;
+    background-color: #4a555b; // {< replace_color(data.colors.base02) >}
+}
+
+.metric-label {
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+.metric scale trough highlight {
+    all: unset;
+    background-color: #e67e80; // {< replace_color(data.colors.base0E) >}
+    border-radius: 10px;
+}
+
+.metric scale trough {
+    all: unset;
+    background-color: #4a555b; // {< replace_color(data.colors.base02) >}
+    border-radius: 50px;
+    min-height: 3px;
+    min-width: 50px;
+}
+
+.net_down,
+.net_up {
+    margin-left: 10px;
+}
+
+menu {
+    background-color: #374247; // {< replace_color(data.colors.base01) >}
+    padding: 10px;
+    border-radius: 20px;
+}
+
+menuitem {
+    background-color: #374247; // {< replace_color(data.colors.base01) >}
+    padding: 6px;
+    border-radius: 10px;
+}
+
+menuitem:hover {
+    background-color: #4a555b; // {< replace_color(data.colors.base02) >}
+}

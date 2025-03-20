@@ -1,0 +1,7 @@
+/.git
+/.deployed_cache
+/.yolk_git
+
+**/cfg/*.txt
+**/nushell/history.txt
+**/*.cache

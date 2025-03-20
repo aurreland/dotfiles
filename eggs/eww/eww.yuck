@@ -1,0 +1,107 @@
+(defwindow bar
+    :monitor 0
+    :geometry (geometry
+        :x "0%"
+        :y "0%"
+        :width "100%"
+        :height "20px"
+        :anchor "top center"
+    )
+    :exclusive true
+    (bar)
+)
+
+(defwidget bar []
+    (centerbox :orientation "h"
+        (left)
+        (center)
+        (right)
+    )
+)
+
+(defwidget left []
+    (box
+        :class "left"
+        :orientation "h"
+        :space-evenly false
+        :halign "start"
+        (workspaces)
+    )
+)
+
+(defwidget center []
+    (box
+        :class "center"
+        :orientation "h"
+        :space-evenly false
+        :halign "center"
+        (label :text hour)
+    )
+)
+
+(defwidget right []
+    (box
+        :class "right"
+        :orientation "h"
+        :space-evenly false
+        :halign "end"
+        (systray
+            :class "systray"
+            :spacing 10
+            :icon-size 16
+        )
+        (metric
+            :label ""
+            :value 30
+            :onchange "wpctl set-volume @DEFAULT_AUDIO_SINK@ {}%"
+        )
+        (metric :label ""
+            :value {EWW_RAM.used_mem_perc}
+            :onchange ""
+        )
+        (metric
+            :label ""
+            :value {EWW_CPU.avg}
+            :onchange ""
+        )
+        (label
+            :class "net_down"
+            :text "  ${round(EWW_NET["eno1"].NET_DOWN, 0)} B"
+        )
+        (label
+            :class "net_up"
+            :text "  ${round(EWW_NET["eno1"].NET_UP, 0)} B"
+        )
+    )
+)
+
+(deflisten workspace "sh scripts/workspace.sh")
+(defwidget workspaces []
+    (literal
+        :content workspace
+    )
+)
+
+(defpoll hour
+    :interval "30s"
+    "date +\"%H:%M\""
+)
+
+(defpoll volume
+    :interval "30s"
+    "wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2*100}'"
+)
+
+(defwidget metric [label value onchange]
+    (box
+        :class "metric"
+        (box label)
+        (scale
+            :min 0
+            :max 101
+            :active {onchange != ""}
+            :value value
+            :onchange onchange
+        )
+    )
+)
