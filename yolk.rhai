@@ -38,6 +38,12 @@ export let eggs = #{
         targets: "~/.config/gtk-3.0",
         enabled: true,
     },
+    heroic: #{
+        targets: "~/.config/heroic/",
+        templates: ["theme/base16.css"],
+        strategy: "merge",
+        enabled: true,
+    },
     hypr: #{
         targets: "~/.config/hypr",
         templates: ["hyprland.conf", "hyprlock.conf"],
@@ -50,6 +56,11 @@ export let eggs = #{
     nushell: #{
         targets: "~/.config/nushell",
         strategy: "merge",
+        enabled: true,
+    },
+    qt5ct: #{
+        targets: "~/.config/qt5ct",
+        templates: ["colors/base16-yolk.conf"],
         enabled: true,
     },
     rofi: #{

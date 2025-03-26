@@ -1,0 +1,36 @@
+
+    --accent: #2f383e; // {< replace_color(data.colors.base00) >}
+    --accent-overlay: #2f383e; // {< replace_color(data.colors.base00) >}
+    --navbar-accent: #2f383e; // {< replace_color(data.colors.base00) >}
+    --background: #2f383e; // {< replace_color(data.colors.base00) >}
+    --body-background: #2f383e; // {< replace_color(data.colors.base00) >}
+    --background-darker: var(--body-background);
+    --current-background: var(--body-background);
+    --navbar-background: #2f383e; // {< replace_color(data.colors.base00) >}
+    --navbar-active-background: #2f383e; // {< replace_color(data.colors.base00) >}
+    --gradient-body-background: linear-gradient(
+        90deg,
+        var(--background-darker) -32px,
+        var(--body-background) 64px,
+        var(--body-background) 100%
+    );
+    --input-background: #2f383e; // {< replace_color(data.colors.base00) >}
+    --modal-background: var(--body-background);
+    --modal-border: var(--body-background);
+    --success: #2f383e; // {< replace_color(data.colors.base00) >}
+    --success-hover: #2f383e; // {< replace_color(data.colors.base00) >}
+    --primary: #d3c6aa; // {< replace_color(data.colors.base05) >}
+    --primary-hover: #d3c6aa; // {< replace_color(data.colors.base05) >}
+    --danger: #2f383e; // {< replace_color(data.colors.base00) >}
+    --danger-hover: #2f383e; // {< replace_color(data.colors.base00) >}
+    --anticheat-denied: #2f383e; // {< replace_color(data.colors.base00) >}
+    --anticheat-broken: #2f383e; // {< replace_color(data.colors.base00) >}
+    --anticheat-running: #2f383e; // {< replace_color(data.colors.base00) >}
+    --anticheat-supported: #2f383e; // {< replace_color(data.colors.base00) >}
+    --anticheat-planned: #2f383e; // {< replace_color(data.colors.base00) >}
+    --text-title: #2f383e; // {< replace_color(data.colors.base00) >}
+    --icons-background: #2f383e; // {< replace_color(data.colors.base00) >}
+    --action-icon: #2f383e; // {< replace_color(data.colors.base00) >}
+    --action-icon-hover: #2f383e; // {< replace_color(data.colors.base00) >}
+    --action-icon-active: #2f383e; // {< replace_color(data.colors.base00) >}
+    --icon-disabled: #2f383e; // {< replace_color(data.colors.base00) >}
